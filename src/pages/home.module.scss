@@ -17,6 +17,7 @@
   flex-direction: column;
 
   min-height: 100vh;
+  width: 50%;
 
   height: 100%;
 }
@@ -45,5 +46,59 @@
     font-size: 18px;
     line-height: 22px;
     font-weight: 600;
+  }
+}
+
+.Post {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  padding-bottom: 48px;
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    font-family: inter;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: var(--body);
+  }
+
+  h1 {
+    color: var(--white);
+    font-family: inter;
+    font-weight: 700;
+    font-size: 28px;
+
+    padding-bottom: 8px;
+  }
+
+  p + p {
+    padding-left: 24px;
+  }
+}
+
+.PostFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 24px;
+
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  span {
+    padding-left: 8px;
   }
 }
